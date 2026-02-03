@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [[ -n "$1" ]]; then
+    case $1 in
+        "apple")
+            echo "Apples are red"
+	    ;;
+        "banana")
+            echo "Bananas are yellow"
+	    ;;
+        "kiwi")
+            echo "Kiwis are brown/green"
+            ;;
+        *)
+            echo "Error: $1 is an unkown fruit"
+            exit 1
+	    ;;
+    esac
+else
+    echo "Usage: $0 {apple, banana, kiwi}"
+fi
