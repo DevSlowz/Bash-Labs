@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in /home/slowz/dotfiles/*; do
+  [[ -f "$file" ]] || contine
+  echo "${file##*/}"
+done
